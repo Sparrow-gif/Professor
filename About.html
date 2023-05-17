@@ -1,0 +1,350 @@
+
+<!DOCTYPE html>
+<html>
+<head> <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>   </title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <style>
+       *{margin:0px;padding:0px;}
+         .topnav {
+  text-transform:capitalize;
+  margin:0px;
+  width:100%;
+  background-color:purple;
+  overflow: hidden;
+  
+}
+.topnav a {
+  float:left;
+  display: block;
+  color:white;
+  text-align: ;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight:bold;
+  font-size: 20px;
+  cursor:pointer;
+}
+.topnav a:hover {
+  background-color:green;
+  color:white;
+}
+.topnav a.active {
+  background-color:green;
+  color: white;
+}
+.topnav .icon {
+  display: none;
+}
+
+
+.accordion {
+  background-color:silver;
+  color: black;
+  cursor: pointer;
+  margin-bottom:15px;
+  padding:15px;
+  width: 100%;
+  text-align: left;
+  text-transform:capitalize;
+  border: none;
+  outline: none;
+  font-size:20px;
+  transition: 0.5s;
+}
+
+.active, .accordion:focus {
+  background-color:salmon;
+  color:white;
+}
+
+.panel {
+  padding:0px;
+  background-color:white;
+  display: none;
+  overflow: hidden;
+  text-align:center;
+  
+}
+
+        #myBtn {
+  display: none; 
+  position: fixed; 
+  bottom: 40px;  
+  right: 30px; 
+  z-index: 99; 
+  border: none;
+  outline: none; 
+  background-color:red; 
+  color: white; 
+  cursor: pointer; 
+  padding: 15px; 
+  border-radius: 10px; 
+  font-size: 18px; 
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+ .panel > .xxx{
+        text-align:center;      
+        width:90%;
+        height:200px;
+        
+     }
+    @media screen and (min-width: 600px) {
+          .accordion { text-align: center;  }
+         .panel > .xxx{ width: 40% ;float:right;}
+        .topnav {position:sticky;top:0px;}
+
+    }
+     @media screen and (max-width: 600px) {
+  .topnav a:not(:nth-child(2)) {display:none;}
+  .topnav a.icon {
+    float:right;
+    display: block;
+  }
+     @media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align:left;
+  }
+}
+  </style>
+</head>
+<body>
+      <div class="topnav" id="myTopnav">
+   <a href="index.html">Home</a>
+  <a href="About.html"class="active" >about us</a>
+  <a href="admission.html"> admission</a>
+  <a href="trades.html">trades</a>
+  <a href="gallery.html">gallery </a>
+  <a href="contact.html">Contact us </a>
+  <a href="more.html">more... </a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+       <br><br>
+
+    <button class="accordion"> about Institute </button>
+<div class="panel">
+   <img src="clgpic1.jpg" class="xxx">  <br> <br> 
+    <p style="font-size:18px; text-align:left;padding:10px;">    Established in 2016, BINPUR-II GOVERNMENT
+                        ITI is approved by the National Skill 
+                        Council Of Vocational Training. It is a 
+                        quality training institution that offers 
+                        in-depth knowledge and professional training
+                        in the fields of Electrician, Wireman, 
+                        Surveyor, Sewing Technology,  Mechanic Motor
+                        Vehicle, Welder, Fitter, and COPA.
+                    With an amazing learning environment and skilled teaching 
+                    professionals, this institution provides complete knowledge
+                    about different industrial sectors so that trainees can be 
+                    self-independent in the future and contribute to the
+                    reinforcement of the industrial strength of the country.
+                    This institution not only sharpens the skills of the students
+                    but also provides them with suitable job opportunities.    </p>
+</div>
+
+<button class="accordion">principal's message </button>
+<div class="panel">
+  <p style="font-size:18px;text-align:left;padding:10px 10px;">
+      <img src="sir.jpg" style="float:right;width:30%;height:100px;border:1px solid:black;">
+      Properly guided technologically skillful society of urban and rural youth empowers 
+      a nation through gradual development of human resource to uphold the country in 
+      global level and  in such nation building process Industrial Training Institutes
+      play pioneering role to bring the technology at ground level through innovative
+      skill-tech alignment .
+   <br> <br>
+      I am so glad to convey a message to all the technical aspirants  of our country 
+      that Binpur Govt. ITI, operated by Gobindapur Sephali Samaj Seba Samity has been
+      efficiently and successfully serving this national task from 2016 onwards.
+      Binpur Govt. ITI situated in eco-friendly atmosphere runs various trades – Fitter,
+      Electrician, Welder, Plumber, Surveyor, Wireman, Mechanic Motor Vehicle (MMV), 
+      COPA , Swing Technology and dress Making to skill and re-skill  the freshers and 
+      workers of rural society. Special attention and emphasize are taken to emancipate
+      back-ward  section particularly women by providing de-novo  skilling.
+  <br> <br>
+      The Binpur Govt. ITI is run by well qualified and experienced faculty members,
+      all committed to teach in excellence. Fruitful interactions between students and
+      teachers are always maintained, enabling the students’ strong technical foundation.
+      Special effort is always made by concerned faculty members for the purpose of 
+      students’ motivation in solving actual industrial problems through various properly 
+      undertaken industrial visit and in-plant training. Our trainees always go through 
+      various specialized and basic subjects for having groomed and to work in  specialized 
+      different areas like Railway, Automotive System, Design Engineering, Control System, 
+      Power Plant Engineering and importantly Software Field.
+   <br> <br>
+      Personally, I am highly satisfied to the departmental activities in co-operative manner
+      to generate revenue for the up gradation of institutional status.</p>
+</div>
+
+<button class="accordion"> Privacy and policy </button>
+<div class="panel">
+
+         <h3 style="padding:10px;color:green;"> College Privacy Notice! </h3>
+
+  <p>
+     College is committed to respecting the privacy of information 
+     and data that may be used to identify you (your “personal information”). 
+     This Privacy Notice describes our policies and practices regarding 
+     the most common ways we collect, use, disclose, or otherwise
+     process your personal information. In certain circumstances, 
+     we may provide you with supplemental disclosures regarding our 
+     data processing activities. 
+ </p>
+  <p>
+      Information We Collect and How We Use Your Personal Information
+      Applicants and Prospective Students.
+  </p>
+        
+  <h4 style="padding:20px;color:green;"> Personal Information We Collect </h4>
+   <p> 
+      Wellesley College collects and uses personal information about
+      applicants and other prospective students, including students 
+      interested in our summer programs (referred to collectively 
+      as “applicants”). If you are or have been an applicant, we 
+      may collect and use the following types of personal information 
+      about you:
+      Information and supporting documentation that you provide in
+      your application, including through third parties, such as 
+      The Common Application, The Coalition Application, or Questbridge
+      Related application materials (e.g., recommendations, references, and test scores)
+      Information that you have permitted a third party, such as The 
+      College Board, to release (e.g., AP or PSAT scores, demographic
+      information, family information, academic information)
+      Contact information for prospective students that we receive 
+      from other institutions and from vendors who conduct advertising
+      activities for us.
+      Financial information, including financial information about your 
+      family members (e.g., information collected in connection with 
+      applications for financial aid, loans, and scholarships)
+      Survey responses (if you choose to respond to a survey sent by
+      us or on our behalf)
+  </p>
+
+   <h4 style="padding:20px;color:green;">How We Use Your Personal Information </h4>
+   <p>
+       Your personal information is used primarily to evaluate your
+       application and related activities, such as evaluating requests
+       for financial aid, communicating with you about your application, 
+       and other administrative functions related to the admissions and 
+       enrollment process. We may also use or disclose your personal 
+       information for the following purposes:
+ 
+       To consider requests for accommodations
+       For research and statistical purposes
+       To provide you with information about
+       Wellesley College and events that you 
+       might be interested in attending
+       To send surveys for research purposes
+       For compliance with legal obligations, 
+       to respond to subpoenas, court orders,
+       or other legal process, and to enforce our agreements
+       To prevent or investigate fraud or other 
+       unlawful activity, and to protect the 
+       security of Wellesley College's property,
+       website, and other systems
+       To meet the obligations of private organizations 
+       with oversight over Wellesley College, 
+       such as accreditation organizations
+       To protect the health, safety, or rights
+       of you, other students, faculty, staff,
+       and visitors.
+ 
+ <h4 style="padding:20px;color:green;"  > How We Share Your Information </h4>
+
+    <p style=" padding:0px 5px 15px 5px;">
+        We may share your information with
+        the following individuals and entities:
+        Individuals who assist in the application process,
+        such as faculty and outside consultants
+        Other departments within Wellesley College, 
+        including our fundraising offices
+        Your financial institutions and funders 
+        (e.g., as necessary for obtaining loans, scholarships, or other funding)
+        Other educational institutions (e.g., in order to send you information
+        about jointly hosted informational events)
+        Vendors who provide services to Wellesley College
+        Governmental bodies as necessary for compliance 
+        with law, with law enforcement authorities when
+        necessary, and other third parties to enforce our legal rights
+        Private organizations with oversight over Wellesley College, 
+        such as accreditation organizations
+        Legal Basis for Processing (for personal information
+        subject to the General Data Protection Regulation (“GDPR”))
+        With respect to personal information subject to the GDPR, 
+        we rely on the following lawful bases for processing:
+    <br> <br>
+        Our legitimate interests, such as conducting our admissions activities
+        To provide you with services or perform on contractual obligations, 
+        such as processing your application for admission
+        For compliance with our legal obligations
+        When necessary for scientific or historical research or statistical purposes
+        With your consent, when applicable. <br><br>
+        <input type="checkbox"><u><b> <a href="#"> Iam Agree To Your Term's And Condition.</a></u></b> 
+</div>
+
+        
+<button onclick="topFunction()" id="myBtn" title="Go to top"> TOP </button>
+
+
+    <script> //navigation javascript start here//
+          function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+     //drop down javascript start here//
+ var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    
+    this.classList.toggle("active");
+
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+      // GoTo Top javascript add here//
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+    
+   </script>
+</body>
+</html>
