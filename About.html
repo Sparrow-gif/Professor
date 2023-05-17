@@ -7,81 +7,130 @@
    <style>
        *{margin:0px;padding:0px;}
          .topnav {
-  text-transform:capitalize;
-  margin:0px;
-  width:100%;
+  text-transform:capitalize;margin:0px;width:100%;
+  overflow: hidden;
   background-color:purple;
-  overflow: hidden;
+            }
+  .topnav a {float:left;display: block;color:white;padding: 14px 16px;text-decoration: none;
+            text-align: ;font-weight:bold;font-size: 20px;cursor:pointer; 
+         }
+  .active, .accordion:focus {color:white;background-color:salmon; }
+
+  .panel {padding:0px;background-color:white;display: none;overflow: hidden;text-align:center; }
+
+      .accordion {
+
+  background-color:silver;color: black;cursor: pointer;margin-bottom:15px;
+padding:15px;width: 100%;text-align: left;text-transform:capitalize;
+  border: none;outline: none;font-size:20px;transition: 0.5s; }
+
+  #myBtn {
+outline: none;position: fixed; bottom: 40px;  right: 30px;color: white; 
+  display: none; z-index: 99;border: none;background-color:red; cursor: pointer; 
+padding: 15px;border-radius: 10px; font-size: 18px;  }
   
-}
-.topnav a {
-  float:left;
-  display: block;
-  color:white;
-  text-align: ;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-weight:bold;
-  font-size: 20px;
-  cursor:pointer;
-}
-.topnav a:hover {
-  background-color:green;
-  color:white;
-}
-.topnav a.active {
-  background-color:green;
+.topnav a:hover {background-color:green;color:white; }
+.topnav a.active {background-color:green;
+  
+
+  
+
+
+
+
+
+  
+
   color: white;
+
 }
+
 .topnav .icon {
+
   display: none;
+
 }
-
-
-.accordion {
-  background-color:silver;
-  color: black;
-  cursor: pointer;
-  margin-bottom:15px;
-  padding:15px;
-  width: 100%;
-  text-align: left;
-  text-transform:capitalize;
-  border: none;
-  outline: none;
-  font-size:20px;
-  transition: 0.5s;
-}
-
-.active, .accordion:focus {
-  background-color:salmon;
-  color:white;
-}
-
-.panel {
-  padding:0px;
-  background-color:white;
-  display: none;
-  overflow: hidden;
-  text-align:center;
   
-}
 
-        #myBtn {
-  display: none; 
-  position: fixed; 
-  bottom: 40px;  
-  right: 30px; 
-  z-index: 99; 
-  border: none;
-  outline: none; 
-  background-color:red; 
-  color: white; 
-  cursor: pointer; 
-  padding: 15px; 
-  border-radius: 10px; 
-  font-size: 18px; 
-}
+   
+
+   
+
+  
+
+   
+
+  
+
+  
+
+  
+
+   
+
+  
+
+  
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+  
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+        
 
 #myBtn:hover {
   background-color: #555;
