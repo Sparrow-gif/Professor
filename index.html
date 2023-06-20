@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <title>   </title>
+   <style>
+       * {
+           Margin:0px;
+           padding:0px;
+           text-transform:capitalize;
+          }
+     body { background:skyblue ; }
+      .container {
+           width:100%;
+           
+            }
+  .boxing {
+           background:Gray;
+           margin-top:0px; 
+
+         }
+     .boxing > img {
+             height:150px; 
+             width:150px;  
+             margin:20px;
+             border-radius:30px;
+           }
+    .biodata {
+          margin:0px 0px; 
+          background:black;
+          padding:20px 0px;
+         }
+   h4 { color:white; 
+        margin:15px ;
+       font-size:20px;}
+
+   h2 { color:white;
+        margin:5px  ; }
+
+   h3 { color:white; 
+        margin:5px ;  }
+
+   p { color:white; 
+       margin:5px;   }
+ 
+   h5{  margin-left:20px;
+        text-align:left;
+        font-size:15px;
+      }
+
+   span { color:aqua;   }
+
+    .fa {
+           font-size:30px;
+            padding:10px;      
+           cursor:pointer;
+         }
+    a { text-decoration:none;}
+   button {
+            padding:10px;
+            background:aqua;
+            border:none;
+            border-radius:30px;
+            font-size:15px;
+            font-weight:500;
+            cursor:pointer;
+            margin:5px;
+            width:40%;
+          }
+   button:hover{
+         background:#ff5361;
+         
+           } 
+    button > a { color:black;}
+   .about {
+            background:Gray;
+            margin:0px 0px; 
+            padding:20px 0px;
+           }
+     .fly {  
+          background:black;
+          margin:0px 0px; 
+          padding:20px 0px;
+          }
+      .big {display:flex;lex-wrap:wrap;} 
+          
+    .big > .box { 
+              width:30%;
+              border-radius:10px;
+              height:150px;
+              background:white;
+              margin:10px auto;
+          }
+   .project {
+          background:Gray;
+          margin:0px 0px; 
+          padding:20px 0px;
+         }
+  .sparrow {  display:flex;flex-wrap:wrap;}
+   .sparrow > .text {
+               width:30%;
+            border-radius:10px;
+               height:200px;
+              background:white;
+              margin:10px auto;
+         }
+    .contact {
+           background:black;
+          margin:0px 0px; 
+          padding:20px 0px;
+      }
+
+
+   .containers{
+             width:100%;
+            height:100vh;
+            background:blue;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            }
+    form {
+       background:white;display:flex;
+        flex-direction:column;
+        padding:2vw 4vw;
+       width:90%; max-width:600px;
+       border-radius:10px;
+        }
+  input,textarea {
+            text-transform:capitalize;
+             outline:none;
+           margin:10px 0px;
+           padding:10px;
+            background: ;
+         font-size:20px;
+           }
+    #Tithi {
+           background:#ff5361;
+          margin:0 auto;
+          width:50%;color:white;
+       }
+  #Tithi:hover {background:aqua;color:black;}
+   .footer {
+          background:skyblue;
+          margin:0px 0px; 
+          padding:10px 0px;
+          }
+   .puja {
+          
+       }
+  </style>
+</head>
+<body>
+   <center>
+     <div class="container">
+          <div class="boxing ">
+            <img src="Som.jpg">
+         </div>
+
+        <div class="biodata">
+          <h4> Hello,Its me  </h4>
+          <h2> Developer Somnath Pal</h2>
+          <h3> and i'am a<span> web developer </span>  </h3>
+          <p>     </p>
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-whatsapp"></a>
+          <a href="#" class="fa fa-instagram"></a>
+       <br>
+          <button type="submit"><a href="#"> download CV </a></button>
+   </div>
+
+     <div class="about">
+          <h2>about <span>me </span> </h2>
+          <h3> frontend devloper</h3>
+          <p>  </p>
+        <button type="submit"><a href="#"> read more </a></button>
+     </div>
+     
+      <div class="fly">
+            <h2>Our <span> services</span></h2>
+         <div class="big">
+               <div class="box">    <!----box1---->
+               
+              </div>
+   
+.             <div class="box">   <!----box2---->
+
+             </div>
+
+              <div class="box">   <!----box3--->
+
+             </div>
+        </div>
+     </div>
+
+       <div class="project">
+             <h2> latest <span> projects </span> </h2>
+            <div class="sparrow">
+                <div class="text">  </div>
+                <div class="text">  </div>
+                <div class="text">  </div>
+                <div class="text">  </div>
+                <div class="text">  </div>
+                <div class="text">  </div>
+           </div>
+      </div>
+
+      <div class="contact">
+           <h2> Contact<span> me </span> </h2>
+           <form onsubmit="sendEmail()">
+              <input type="text" id="name" placeholder="Your Name" required>
+              <input type="email"id="email" placeholder="Email Id" required>
+              <input type="Number"id="number" placeholder="Mobile No" required>
+              <textarea id="message " rows="7"placeholder="How Can We Help You ?"  required> </textarea>
+
+             <button type="submit"id="Tithi"> Send </button>
+         </form>
+      </div>
+   
+      <div class="footer">
+           <footer>
+              <h5>@footer_page</h5>
+              <p class="puja"> Copyright© 2023 by codeliber || all reserved  </p>
+          </footer>
+       </div>
+   </div>
+  </center>
+</body>
+</html>
