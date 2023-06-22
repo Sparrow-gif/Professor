@@ -91,10 +91,14 @@
           margin:0px 0px; 
           padding:20px 0px;
           }
-      .big {display:flex;lex-wrap:wrap;} 
+      .big {display:flex;lex-wrap:wrap;justify-content:space-between;} 
           
     .big > .box { 
               width:30%;
+              position:relative;
+              overflow:hidden;
+             justify-content:center;
+             align-items:center;
               border-radius:10px;
               height:450px;
               background:white;
@@ -179,6 +183,44 @@
   background:Forestgreen;
   color:white;border-radius:10px;
 }
+
+       .big > .box > .icon {
+           position:relative;
+       width:40px;overflow:hidden;
+        height:30px;
+         line-height:35px;
+        padding:10px;
+      border-radius:50%;font-weight:bold;
+    background:green;color:white;
+     font-size:25px;
+      transition:1s;
+          }   
+          /* Box Hover Effects */     /* box 1*/
+    .big  .box:nth-child(1) .icon {
+        background:orange;
+       box-shadow:0 0 0 0 red;
+     }
+   .big  .box:nth-child(1):hover .icon {  /*Box 1 */
+         box-shadow:0 0 0 150px red;       
+       }
+
+ .big  .box:nth-child(2) .icon {      /* Box 2*/
+        background:hotpink;
+       box-shadow:0 0 0 0px teal;
+     }
+   .big  .box:nth-child(2):hover .icon {    /* Box 2 */
+         box-shadow:0 0 0 150px teal;       
+       }
+    
+     .big  .box:nth-child(3) .icon {      /* Box 3 */
+        background:yellowgreen;
+       box-shadow:0 0 0 0 olive;
+     }
+   .big  .box:nth-child(3):hover .icon {   /* Box 3*/
+         box-shadow:0 0 0 150px olive;       
+       }
+    .raw {color:black;}
+      
   </style>
 </head>
 <body>
@@ -215,15 +257,30 @@
             <h2>Our <span> services</span></h2>
          <div class="big">
                <div class="box">    <!----box1---->
-               
+                  <div class="icon"> 01 </div>
+                   <div class="content"> 
+                      <h6> Services Name</h6>
+                      <p class="raw"> ram siya ka karun kahine namoho subodh </p>
+                      <a href="#"> Read More </a>
+                   </div>
               </div>
    
 .             <div class="box">   <!----box2---->
-
+                 <div class="icon"> 02 </div>
+                   <div class="content"> 
+                      <h6> Services Name</h6>
+                      <p class="raw"> ram siya ka karun kahine namoho subodh </p>
+                      <a href="#"> Read More </a>
+                  </div>
              </div>
 
               <div class="box">   <!----box3--->
-
+                   <div class="icon"> 03 </div>
+                   <div class="content"> 
+                      <h6> Services Name</h6>
+                      <p class="raw"> ram siya ka karun kahine namoho subodh </p>
+                      <a href="#"> Read More </a>
+                   </div>
              </div>
         </div>
      </div>
