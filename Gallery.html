@@ -1,0 +1,71 @@
+<DOCTYPE html>
+<html>
+<head>
+   <title> The align-content Property </title>
+   <style type="text/css">
+        * {margin:0px;padding:0px;}
+     h2 {
+         padding:10px;
+         font-size:30px;
+         color:aqua;
+         border:1px solid black;
+         width:50%;
+         border-radius:10px;
+         margin:10px auto;
+         background:black;
+        }
+      .container {
+         display: flex;
+         flex-wrap: wrap;      
+         width:100%;margin:10px auto;
+         background: ;        
+         height: auto;
+      }
+      .container > div {
+         background:silver ;
+         width: 160px;
+         border-radius:10px;
+   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+         height:180px;
+         overflow:hidden;
+         line-height:180px;
+         text-align: center;
+         margin:5px auto;
+      }
+   img {
+       width:140px;
+       height:160px;
+       margin:10px;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+       border-radius:10px;
+      }
+   img:hover{
+       width:160px;
+       height:180px;
+       transition-duration:1s;
+       margin:0px;
+    
+          }
+   div:hover {
+        transition-duration:1s;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        }
+   </style>
+</head>
+<body style="background: ;"> <center>
+         <h2> "Image Gallery" </h2>  
+   
+    <div class="container">     
+      <div> <img src="girl.jpg"> </img> </div>
+      <div> <img src="girl.jpg"> </img> </div>
+      <div> <img src="img3"> </img> </div>
+      <div> <img src="img4"> </img> </div>
+      <div> <img src="img5"> </img> </div>
+      <div> <img src="img6"> </img> </div>
+      <div> <img src="img7"> </img> </div>
+      <div> <img src="img8"> </img> </div>
+      <div> <img src="img9"> </img> </div>
+   </div>
+   </center>
+</body>
+</html>
