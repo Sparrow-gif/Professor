@@ -112,11 +112,12 @@
           margin:0px 0px; 
           padding:20px 0px;
          }
-  .sparrow {  display:flex;flex-wrap:wrap;justify-content:space-between;}
-   .sparrow > .text {
-               width:300px;
+  .sparrow > a { text-decoration:none;color:black; }
+   .sparrow > a > .text {
+               width:60%;
             border-radius:10px;
-               height:300px;
+              padding:10px;
+              cursor:pointer;
               background:white;
               margin:10px auto;
          }
@@ -223,6 +224,13 @@
          box-shadow:0 0 0 400px olive;       
        }
     .raw {color:black;}
+        
+                                                      /* Media Query */
+      @media only screen and (min-width: 480px) {
+         .sparrow {display:flex;flex-wrap:wrap;justify-content:center;align-items:center;margin:20px auto;}
+         .sparrow > a > div {width:200px;margin:10px;}
+      }
+
       
   </style>
 </head>
@@ -291,12 +299,14 @@
        <div class="project">
              <h2> latest <span> projects </span> </h2>
             <div class="sparrow">
-                <div class="text">  </div>
-                <div class="text">  </div>
-                <div class="text">  </div>
-                <div class="text">  </div>
-                <div class="text">  </div>
-                <div class="text">  </div>
+                <a href="#">   <div class="text"> Calculator </div> </a>
+                <a href="#">  <div class="text"> Survey Form </div> </a>
+                <a href="#">  <div class="text"> Contact Page </div></a>
+                <a href="#">  <div class="text"> Demo CLG Website </div></a>
+                <a href="#">  <div class="text"> Web Application </div></a>
+                <a href="#">  <div class="text"> My Profile Page </div></a>
+                <a href="#">  <div class="text">       </div></a>
+                <a href="#">  <div class="text">      </div></a>
            </div>
       </div>
 
