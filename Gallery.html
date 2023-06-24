@@ -65,9 +65,18 @@
          }
        img {   width:250px;
                height:250px;  }
+      img:hover { 
+               width:270px;
+               height:270px;  
+            }
      .container > div {
                width:270px;
                height:270px;  }
+        video { height:300px;width:40%;}
+     .vdos {
+         display: flex;
+         flex-wrap: wrap;    }
+       
       }
    </style>
 </head>
@@ -86,10 +95,10 @@
       <div> <img src="img9.jpg"> </img> </div>
       <div> <img src="img10.jpg"> </img> </div>
    
-
+ <div class="vdos">
     <video src="Video1.mp4" controls > This text will be displayed if your browser does not support embedding videos. </video>  <!-------Videos------>
     <video src="Video2.mp4" controls > This text will be displayed if your browser does not support embedding videos. </video>
-
+ </div>
     
    </div>
    </center>
