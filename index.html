@@ -284,11 +284,22 @@
          box-shadow:0 0 0 400px olive;       
        }
     .raw {color:black;}
-        
+      
+   .big > .box > .content {
+          position:relative;
+          z-index:1;
+          transition:1s;
+        }
+    .big > .box:hover  {color:white;}
 
     @media only screen and (min-width: 480px) {
          form {width:50%; }
-      .sparrow > a  { display:flex;flex-wrap:wrap;justify-content:space-between;}
+       
+      .sparrow > a  { 
+             display:flex;
+             flex-wrap:wrap;
+            justify-content:space-between;}
+       
            .sparrow > a > .text {
                width:40%;
             border-radius:0px;
